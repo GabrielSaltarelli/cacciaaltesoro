@@ -12,8 +12,8 @@ function doLogin(allert) {
                   'Content-Type': 'application/json',
               },
               body: JSON.stringify({
-                  "username": username,
-                  "password": password
+                  "exampleInputUsername": username,
+                  "exampleInputPassword": password
               })
           })
           .then(response => responsive.json())
