@@ -4,7 +4,6 @@ function doLogin(allert) {
       if(usern == "" || passw == "") {
         alert ("Username e password sono obbligatori"); 
     }
-  }
       else {
           fetch('https://www.cacciaapi.altervista.org/login.php/loginIpad', {
               method: 'POST',
@@ -23,3 +22,4 @@ function doLogin(allert) {
           });
 
       }
+}
