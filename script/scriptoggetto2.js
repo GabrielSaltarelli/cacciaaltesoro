@@ -4,12 +4,14 @@ else {
               headers: {
                   'Content-Type': 'application/json',
               },
-              body: JSON.stringify({
-                 [
-                  { "Film": "Fear", "Visto": "si", "Testo": "Fear", "Valutazione": "3/5" }, //0
-                  { "Film": "One Life", "Visto": "no", "Testo": "One Life", "Valutazione": "3.6/5" }, //1
-                  { "Film": "L'ordine del tempo", "no": "Attivo", "Testo": "L'origine del tempo" "Valutazione": "2.7/5" }, //2
-                  { "Film": "Tutti tranne te, "Visto": "si", "Testo": "Tutti tranne te" "Valutazione": "2.5/5" }, //3
+              body: JSON.stringify{
+                        "film": "Fear",
+                        "Visto": "Si",
+                 "Recenzioni"[ 
+                   { "Utente": "Giovannino", "Voto": "10/10", "Testo": "Il film è davvero spettacolare, cedo di non aver mai vistoun film così bello ed appassionante, lo consiglio a chi ha paura", "Valutazione": "3/5" }, //0
+                  { "Utente": " Paolino", "Voto": "3/10", "Testo": "Film davvero INDECENTE, non ho mai visto nulla del genere, gli do 3 solo perchè sono buono ma non lo consiglierei a nessuno."}, //1
+                  { "Utente": "Marino", "Voto": "5/10", "Testo": "Film non male ma non da sufficienza, lascio la recensione solo perchè devo." }, //2
+                  { "Utente": "Franchino", "Voto": "6/10", "Testo": "Il fil in questione non mi fa ne caldo ne freddo, gli do la sufficienza perchè la merita, ma ninete di più"}, //3
                   ]
               })
           })
